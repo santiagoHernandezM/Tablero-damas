@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Damas</title>
+    <style>
+        .color{
+            background-color: #000;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .color:hover{
+            background-color: #00b98b;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <table border="1">
+            <tr v-for="fila in 8">
+                <td class="color" v-for="columna in 8"></td>
+            </tr>
+        </table>
+    </main>
+
+    <script src="vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
